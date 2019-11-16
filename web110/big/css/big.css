@@ -1,0 +1,96 @@
+/* BIG Site*/
+html {
+    background-color: slategray;
+}
+main {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+}
+fullwidth {
+    width:100%;
+}
+ul {
+    z-index: 2;
+}
+h1 a {
+    text-decoration: none;
+}
+section {
+    float: left;
+    width: 65%;
+}
+aside {
+    float: right;
+    width: 34%;
+}
+img {
+    width: 100%;
+    border: 1px solid #000;
+}
+div.gallery {
+    text-align: center;
+}
+figure {
+    display: inline-block;
+    border: 1px solid #0000;
+}
+
+/* Start Embed Resp. Styles */
+.embed-container { 
+position: relative; 
+padding-bottom: 56.25%; 
+height: 0; 
+overflow: 
+hidden; 
+max-width: 100%; 
+} 
+
+.embed-container iframe { 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+}
+
+/*End Embed Resp. Styles*/
+
+/* HIDE AGENDA */
+div.embed-container.agenda-view {
+    display: none;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+/*CALENDAR MOBILE*/
+@media all and (max-width: 860px) {
+
+    /*Show Agenda*/
+div.embed-container.agenda-view {
+        display: block;
+}
+    /*Hide Month*/
+div.embed-container.month-view {
+        display: none;
+}    
+}
+/* Mobile styles*/
+@media all and (max-width: 1000px) {
+    main {
+    width: 80%;
+}
+section {
+    float: none;
+    width: 100%;
+}
+aside {
+    float: none;
+    width: 100%;
+}
+    
+}
